@@ -1,0 +1,381 @@
+@font-face {
+    font-family: AkiraExpanded;
+    src: url(../fonts/AkiraExpanded.otf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+.container-fluid{
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    width: 1216px;
+    margin: 0 auto;
+}
+/* --- Start Css Header ----*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+} 
+header .row {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.1fr;
+    align-items: center;
+    padding-top: 30px;
+}
+header .row .site-logo img{
+    max-width: 100%;
+}
+header .row .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    grid-gap: 0px 40px;
+}
+header .row .nav-links ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 14px;
+    font-family: AkiraExpanded;
+    font-weight: 800;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+header .row .right-btn a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: AkiraExpanded;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+/* --- Close Css Header ----*/
+/* --- Start  Css Home Banner ----*/
+.home-banner {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 196px 0px 200px 0px;
+}
+.home-banner .c-banner {
+    text-align: center;
+}
+.home-banner .c-banner h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 24px;
+    font-family: AkiraExpanded;
+    margin-bottom: 15px;
+}
+.home-banner .c-banner h2{
+    font-size: 70px;
+    font-weight: 800;
+    color: #fff;
+    font-family: AkiraExpanded;
+    line-height: 70px;
+    text-transform: uppercase;
+    max-width: 1031px;
+    margin: 0 auto;
+}
+.home-banner .c-banner h2 span{
+    font-size: 70px;
+    font-weight: 800;
+    color: #FF0000;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-family: AkiraExpanded;
+}
+.home-banner .c-banner .c-btns{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 27px;
+    font-family: AkiraExpanded;
+    padding: 15px 20px;
+    background-color: #FF0000;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 40px;
+}
+/* --- Close Css Home Banner ----*/
+/* --- Start Css Section One----*/
+.section-one {
+    padding: 50px 0px 50px 0px;
+}
+.section-one .logo-slider .swiper {
+    width: 100%;
+    height: 100%;
+}
+.section-one .logo-slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-one .logo-slider .swiper-slide img {
+    max-width: 100%;
+    margin-right: 0px;
+}
+/*--- Close Css Section One ----*/
+/*--- Start Css Section Two ----*/
+.section-two {
+    padding: 50px 0px 50px 0px;
+}
+.section-two .n-heading {
+    display: flex;
+    position: relative;
+}   
+.section-two .news-head h3{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    font-family: AkiraExpanded;
+}
+.section-two .swiper {
+    width: 100%;
+    height: 100%;
+}
+.section-two .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.section-two .news-slider .news-wrapper {
+    padding-top: 23px;
+}
+.section-two .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-two .swiper-slide .card .top-img img {
+    max-width: 100%;
+    filter: grayscale(1);
+}
+.section-two .swiper-slide .card .top-content{
+    background-color: #000000;
+    text-align: left;
+    padding: 25px 0px 25px 30px;
+}
+.section-two .swiper-slide .card .top-content h3{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.section-two .swiper-slide .card .top-content p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    font-family: Montserrat-Medium;
+    color: #FFFFFF;
+    max-width: 299px;
+    margin-bottom: 26px;
+}
+.section-two .swiper-slide .card .top-content a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+}
+.section-two .swiper-wrapper .swiper-slide .card .top-content a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    color:#FFFFFF;
+    padding: 3px 0px 3px 15px;
+    text-transform: uppercase;
+    background-color: #FF0000;
+}
+.section-two .swiper-wrapper .swiper-slide .card .top-content a .one-arrow{
+    padding-left: 50%;
+}
+.section-two .swiper-wrapper .swiper-slide .card .top-content a .two-arrow{
+    padding-left: 10%;
+}
+.section-two .swiper-button-prev {
+    width: 0px;
+    height: 0px;
+    left: 1115px;
+    background-color: #FF0000;
+    padding: 20px 20px;
+    margin-top: 0px;
+    top: 0;
+}
+.section-two .swiper-button-next {
+    width: 0px;
+    height: 0px;
+    margin-top: 0px;
+    top: 0px;
+    background-color: #FF0000;
+    padding: 20px 20px;
+}
+.section-two .swiper-button-prev:after{
+    content: 'prev';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.section-two .swiper-button-next:after{
+    content: 'next';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/*--- Close Css Section Two ----*/
+/* --- Start Css Section Five----*/
+.section-five {
+    padding: 100px 0px 150px 0px;
+}
+.section-five .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.section-five .row .left img{
+    max-width: 100%;
+}
+.section-five .row .right {
+    padding: 128px 0px 0px 33px;
+}
+.section-five .row .right a {
+    font-size: 15px;
+    text-decoration: none;
+}
+.section-five .row .right a i {
+    color: #FFFFFF;
+} 
+.section-five .row .right h3{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: AkiraExpanded;
+    line-height: 50px;
+    margin: 20px 0px 62px 0px;
+}
+.section-five .row .right .shop-btn {
+    background-color: #FF0000;
+    padding: 15px 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: AkiraExpanded;
+    line-height: 27px;
+}
+/* --- Close Css Section Five----*/
+/* --- Start Css Section six----*/
+.section-six .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.section-six .row .left{
+    padding: 181px 120px 180px 112px;
+    background-color: #FF0000;
+}
+.section-six .row .left .l-text h3{
+   font-size: 80px;
+   font-weight: 800;
+   line-height: 80px;
+   font-family: AkiraExpanded;
+   color: #fff;
+   max-width: 557px;
+}
+.section-six .row .left .l-social ul{
+    list-style-type: none;
+    display: flex;
+    grid-gap: 0px 15px;
+    padding-top: 40px;
+}
+.section-six .row .left .l-social ul li a{
+   text-decoration: none;
+   color: #FF0000;
+   background-color: #FFFFFF;
+   padding: 10px 15px;
+}
+.section-six .row .left .l-social ul li a i{
+    font-size: 20px;
+}
+.section-six .row .left .l-social ul li a img{
+    max-width: 100%;
+}
+.section-six .row .right img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+}
+/* --- Close Css Section six----*/
+/*--- Start Css Footer ----*/
+footer {
+    padding: 131px 0px 26px 0px;
+    background-color: #000000;
+}
+footer .row {
+    display: grid;
+    grid-gap: 40px 0px;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+footer .row .f-img img {
+    max-width: 100%;
+    height: auto;
+}
+footer .row .f-socials ul{
+    list-style-type: none;
+    display: flex;
+    grid-gap: 0px 41px;
+    justify-content: center;
+    margin-top: 17px;
+}
+footer .row .f-socials ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: AkiraExpanded;
+}
+footer .row .f-menu ul{
+    list-style-type: none;
+    display: flex;
+    grid-gap: 0px 40px;
+    justify-content: center;
+    margin-top: 14px;
+}
+footer .row .f-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: AkiraExpanded;
+    font-weight: 800;
+    line-height: 21px;
+}
+footer .row .f-copyright {
+    font-size: 14px;
+    font-family: AkiraExpanded;
+    font-weight: 800;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 20px;
+}
+/*--- Close Css Footer ----*/
