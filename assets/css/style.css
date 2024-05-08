@@ -51,6 +51,10 @@ header .row .nav-links ul li a{
     line-height: 21px;
     text-transform: uppercase;
 }
+header .row .nav-links ul li a:hover{
+    color: #FF0000;
+    transition: 0.9s;
+}
 header .row .right-btn a{
     text-decoration: none;
     font-size: 14px;
@@ -59,6 +63,10 @@ header .row .right-btn a{
     padding: 10px 15px;
     border: 1px solid #fff;
     color: #fff;
+}
+header .row .right-btn a:hover{
+    background-color: #FF0000;
+    transition: 0.9s;
 }
 /* --- Close Css Header ----*/
 /* --- Start  Css Home Banner ----*/
@@ -113,14 +121,23 @@ header .row .right-btn a{
     display: inline-block;
     margin-top: 40px;
 }
+.home-banner .c-banner .c-btns:hover{
+    background-color: #FFFFFF;
+    transition: 0.9s;
+    color: #FF0000;
+}
 /* --- Close Css Home Banner ----*/
 /* --- Start Css Section One----*/
 .section-one {
     padding: 50px 0px 50px 0px;
 }
+
 .section-one .logo-slider .swiper {
     width: 100%;
     height: 100%;
+}
+.section-one .logo-slider .top-slider .top-wrapper{
+    align-items: center;
 }
 .section-one .logo-slider .swiper-slide {
     text-align: center;
@@ -128,16 +145,16 @@ header .row .right-btn a{
     background: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .section-one .logo-slider .swiper-slide img {
     max-width: 100%;
     margin-right: 0px;
 }
+
 /*--- Close Css Section One ----*/
 /*--- Start Css Section Two ----*/
 .section-two {
-    padding: 50px 0px 50px 0px;
+    padding: 66px 0px 50px 0px;
 }
 .section-two .n-heading {
     display: flex;
@@ -214,10 +231,10 @@ header .row .right-btn a{
     background-color: #FF0000;
 }
 .section-two .swiper-wrapper .swiper-slide .card .top-content a .one-arrow{
-    padding-left: 50%;
+    padding-left: 162px;
 }
 .section-two .swiper-wrapper .swiper-slide .card .top-content a .two-arrow{
-    padding-left: 10%;
+    padding-left: 15px;
 }
 .section-two .swiper-button-prev {
     width: 0px;
@@ -247,19 +264,232 @@ header .row .right-btn a{
     color: #FFFFFF;
 }
 /*--- Close Css Section Two ----*/
+/* --- Start Css Section Three----*/
+.section-three .row {
+    display: grid;
+}
+.section-three .row .box-one{
+    background-color: #000000;
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding:  96px 77px 93px 75px;
+}
+.section-three .row .box-one h3{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30.8px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+    max-width: 232px;
+    margin: 0 auto;
+}
+.section-three .row .box-two {
+    grid-row: 1 / 5;
+    grid-column: 2 / 4;
+}
+.section-three .row .box-two img {
+    max-width: 100%;
+    filter: grayscale(1);
+}
+.section-three .row .box-three {
+    background-color: orange;
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+
+}
+.section-three .row .box-three h3{
+    font-size: 187px;
+    font-weight: 800;
+    line-height: 187px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+} 
+.section-three .row .box-three h3 span{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+}
+.section-three .row .box-four {
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 81px 79px 58px 81px;
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+}
+.section-three .row .box-four img{
+    max-width: 100%;
+} 
+.section-three .row .box-four h3{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+}
+.section-three .row .box-five {
+    background-color: aqua;
+    padding:  47px 67px 47px 64px;
+    grid-row: 2 / 5;
+    grid-column: 4 / 5;
+}
+.section-three .row .box-five h3{
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+    max-width: 364px;
+    text-align: center;
+    margin: 0 auto;
+} 
+.section-three .row .box-five h3 span{
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    font-family: AkiraExpanded;
+    color: #FF0000;
+}
+/* --- Close Css Section Three----*/
+/* --- Start Css Section Four----*/
+.section-four {
+    padding: 78px 0px 41px 0px;
+    background-color: #000000;
+}
+.section-four .data .row {
+    display: grid;
+    grid-template-columns: 0.5fr 0.6fr;
+}
+.section-four .data .row .left {
+    max-width: 365px;
+}
+.section-four .data .row .left .p-one{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    color: #FFFFFF;
+    font-family: Montserrat-Medium;
+}
+.section-four .data .row .left h3{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-family: AkiraExpanded;
+    margin-top: 14px;
+}
+.section-four .data .row .left .p-two{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    color: #FFFFFF;
+    font-family: Montserrat-Medium;
+    margin-top: 8px;
+}
+.section-four .data .row .left .p-three{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    color:#FF0000;
+    font-family: Montserrat-Medium;
+    margin-top: 53px;
+}
+.section-four .data .row .right {
+    display: flex;
+    grid-gap: 0px 45px;
+    align-items: center;
+}
+.section-four .data .row .right .one-img{
+    max-width: 100%;
+}
+.section-four .data .row .right .two-img{
+    max-width: 100%;
+}
+.section-four .data .row .right .one-img{
+    background-color: #FFFFFF;
+    padding: 45px 50px 45px 50px;
+}
+.section-four .data .row .right .two-img{
+    background-color: #FFFFFF;
+    padding: 75px 50px 75px 50px;
+}
+.section-four .data .row .right .texts{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    font-family: AkiraExpanded;
+    color:#FF0000;
+}
+.section-four .data .second-row .top-text{
+    padding-top: 87px;
+}
+.section-four .data .second-row .top-text h3{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+} 
+.section-four .data .second-row .t-data {
+    padding-top: 23px;
+}
+.section-four .data .second-row .t-data table tr{
+    display: flex;
+    grid-gap: 122px;
+    padding-top: 20px;
+    border-bottom: 1px solid #2D2D2D;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.section-four .data .second-row .t-data table tbody tr td {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    font-family: Montserrat-Medium;
+}
+.section-four .data .second-row .t-data table tbody tr td img{
+    width: 22px;
+    height: 22px;
+}
+.section-four .data .second-row .t-data table tbody tr .img-td{
+    display: flex;
+    grid-gap: 0px 15px;
+    align-items: center;
+}
+.section-four .data .second-row .t-data table tbody tr .f-word {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    font-family: AkiraExpanded;
+}
+.section-four .data .second-row .t-data table tbody tr .s-word {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    font-family: AkiraExpanded;
+}
+.section-four .data .second-row .t-data table tbody .f-row{
+    opacity: 30%;
+}
+/* --- CLose Css Section Four----*/
 /* --- Start Css Section Five----*/
 .section-five {
-    padding: 100px 0px 150px 0px;
+    padding: 150px 0px 150px 0px;
 }
 .section-five .row{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 0.64fr 0.5fr
 }
 .section-five .row .left img{
     max-width: 100%;
 }
 .section-five .row .right {
-    padding: 128px 0px 0px 33px;
+    padding: 128px 0px 0px 30px;
 }
 .section-five .row .right a {
     font-size: 15px;
@@ -273,7 +503,8 @@ header .row .right-btn a{
     font-weight: 800;
     font-family: AkiraExpanded;
     line-height: 50px;
-    margin: 20px 0px 62px 0px;
+    margin-top: 16px;
+    max-width: 503px;
 }
 .section-five .row .right .shop-btn {
     background-color: #FF0000;
@@ -283,12 +514,20 @@ header .row .right-btn a{
     font-weight: 800;
     font-family: AkiraExpanded;
     line-height: 27px;
+    display: inline-block;
+    margin-top: 62px;
+}
+.section-five .row .right .shop-btn:hover{
+    background-color: #FFFFFF;
+    transition: 0.9s;
+    color: #FF0000;
+    border: 1px solid #FF0000;
 }
 /* --- Close Css Section Five----*/
 /* --- Start Css Section six----*/
 .section-six .row{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 55% 45%;
 }
 .section-six .row .left{
     padding: 181px 120px 180px 112px;
@@ -314,11 +553,13 @@ header .row .right-btn a{
    background-color: #FFFFFF;
    padding: 10px 15px;
 }
+.section-six .row .left .l-social ul li a:hover{
+    background-color: #FF0000;
+    transition: 0.9s;
+    color: #FFFFFF;
+}
 .section-six .row .left .l-social ul li a i{
     font-size: 20px;
-}
-.section-six .row .left .l-social ul li a img{
-    max-width: 100%;
 }
 .section-six .row .right img{
     width: 100%;
@@ -334,7 +575,7 @@ footer {
 }
 footer .row {
     display: grid;
-    grid-gap: 40px 0px;
+    grid-gap: 0px 0px;
     grid-template-columns: 1fr;
     text-align: center;
 }
@@ -342,12 +583,14 @@ footer .row .f-img img {
     max-width: 100%;
     height: auto;
 }
+footer .row .f-socials {
+    margin-top: 57px;
+}
 footer .row .f-socials ul{
     list-style-type: none;
     display: flex;
     grid-gap: 0px 41px;
     justify-content: center;
-    margin-top: 17px;
 }
 footer .row .f-socials ul li a{
     color: #fff;
@@ -355,12 +598,18 @@ footer .row .f-socials ul li a{
     font-size: 18px;
     font-family: AkiraExpanded;
 }
+footer .row .f-menu{
+    border-bottom: 1px solid #2D2D2D;
+}
+footer .row .f-menu {
+    margin-top: 54px;
+}
 footer .row .f-menu ul{
     list-style-type: none;
     display: flex;
     grid-gap: 0px 40px;
     justify-content: center;
-    margin-top: 14px;
+    margin-bottom: 29px;
 }
 footer .row .f-menu ul li a{
     text-decoration: none;
@@ -371,11 +620,32 @@ footer .row .f-menu ul li a{
     line-height: 21px;
 }
 footer .row .f-copyright {
+    padding-top: 30px;
+}
+footer .row .f-copyright {
     font-size: 14px;
     font-family: AkiraExpanded;
     font-weight: 800;
     line-height: 21px;
     color: #fff;
-    margin-top: 20px;
+}
+footer .row .f-copyright p i{
+    color: #FF0000;
+}
+footer .row .f-copyright p a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+footer .row .f-copyright p a:hover{
+    color: #FF0000;
+    transition: 0.9s; 
+}
+footer .row .f-menu ul li a:hover{
+    color: #FF0000;
+    transition: 0.9s; 
+}
+footer .row .f-socials ul li a:hover{
+    color: #FF0000;
+    transition: 0.9s; 
 }
 /*--- Close Css Footer ----*/
