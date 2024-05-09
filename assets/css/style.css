@@ -26,7 +26,7 @@ header {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: transparent; 
 } 
 header .row {
     display: grid;
@@ -60,7 +60,7 @@ header .row .right-btn a{
     font-size: 14px;
     font-weight: 800;
     font-family: AkiraExpanded;
-    padding: 10px 15px;
+    padding: 14px 16px 13px 17px;
     border: 1px solid #fff;
     color: #fff;
 }
@@ -77,7 +77,7 @@ header .row .right-btn a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 196px 0px 200px 0px;
+    padding: 185px 0px 209px 0px;
 }
 .home-banner .c-banner {
     text-align: center;
@@ -265,17 +265,19 @@ header .row .right-btn a:hover{
 }
 /*--- Close Css Section Two ----*/
 /* --- Start Css Section Three----*/
+.section-three{
+    padding: 100px 0px 146px 0px;
+}
 .section-three .row {
     display: grid;
+    grid-template-columns: 0.5fr 0.5212fr 0.77fr;
 }
-.section-three .row .box-one{
+.section-three .row .box-one .top{
     background-color: #000000;
     text-align: center;
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    padding:  96px 77px 93px 75px;
+    padding:  96px 77px 94px 75px;
 }
-.section-three .row .box-one h3{
+.section-three .row .box-one .top h3{
     font-size: 22px;
     font-weight: 800;
     line-height: 30.8px;
@@ -284,68 +286,63 @@ header .row .right-btn a:hover{
     max-width: 232px;
     margin: 0 auto;
 }
-.section-three .row .box-two {
-    grid-row: 1 / 5;
-    grid-column: 2 / 4;
+.section-three .row .box-one .bottom{
+    background-color: #FF0000;
+    text-align: center;
+    padding:  81px 81px 58px 79px;
+}
+.section-three .row .box-one .bottom img{
+    max-width: 100%;
+    margin-bottom: 30px;
+} 
+.section-three .row .box-one .bottom h3{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    font-family: AkiraExpanded;
+    color: #FFFFFF;
+    max-width: 224px;
+    margin: 0 auto;
 }
 .section-three .row .box-two img {
     max-width: 100%;
     filter: grayscale(1);
 }
-.section-three .row .box-three {
-    background-color: orange;
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
-
+.section-three .row .box-three .top {
+    background-color: #FF0000;
+    text-align: center;
+    padding: 3px 0px 15px 0px;
 }
-.section-three .row .box-three h3{
+.section-three .row .box-three .top h3{
     font-size: 187px;
     font-weight: 800;
     line-height: 187px;
     font-family: AkiraExpanded;
     color: #FFFFFF;
-} 
-.section-three .row .box-three h3 span{
+}
+.section-three .row .box-three .top h4{
     font-size: 32px;
     font-weight: 800;
     line-height: 32px;
     font-family: AkiraExpanded;
     color: #FFFFFF;
+    max-width: 223px;
+    margin: 0 auto;
 }
-.section-three .row .box-four {
-    background-color: yellowgreen;
-    text-align: center;
-    padding: 81px 79px 58px 81px;
-    grid-row: 2 / 5;
-    grid-column: 1 / 2;
+.section-three .row .box-three .bottom {
+    background-color: #000000;
+    padding: 47px 64px 47px 67px;
 }
-.section-three .row .box-four img{
-    max-width: 100%;
-} 
-.section-three .row .box-four h3{
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 32px;
-    font-family: AkiraExpanded;
-    color: #FFFFFF;
-}
-.section-three .row .box-five {
-    background-color: aqua;
-    padding:  47px 67px 47px 64px;
-    grid-row: 2 / 5;
-    grid-column: 4 / 5;
-}
-.section-three .row .box-five h3{
+.section-three .row .box-three .bottom h3{
     font-size: 55px;
     font-weight: 800;
     line-height: 55px;
     font-family: AkiraExpanded;
     color: #FFFFFF;
     max-width: 364px;
-    text-align: center;
     margin: 0 auto;
 } 
-.section-three .row .box-five h3 span{
+.section-three .row .box-three .bottom h3 span{
     font-size: 55px;
     font-weight: 800;
     line-height: 55px;
@@ -479,7 +476,7 @@ header .row .right-btn a:hover{
 /* --- CLose Css Section Four----*/
 /* --- Start Css Section Five----*/
 .section-five {
-    padding: 150px 0px 150px 0px;
+    padding: 150px 0px 146px 0px;
 }
 .section-five .row{
     display: grid;
@@ -560,6 +557,9 @@ header .row .right-btn a:hover{
 }
 .section-six .row .left .l-social ul li a i{
     font-size: 20px;
+}
+.section-six .row .left .l-social ul li a img{
+    max-width: 100%;
 }
 .section-six .row .right img{
     width: 100%;
