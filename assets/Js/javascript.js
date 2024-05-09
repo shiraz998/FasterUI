@@ -1,11 +1,11 @@
 //-- Start Js Logo Slider ---- //
 var swiper = new Swiper(".top-slider", {
-  slidesPerView: 7,
-  spaceBetween: 0,
+  slidesPerView: "auto",
+  spaceBetween: 73,
   loop: true,
-  autoplay: {
-    delay: 3000,
-  }
+  // autoplay: {
+  //   delay: 3000,
+  // }
 });
 //-- Close Js Logo Slider ---- //
 //-- Start Js News Slider ---- //
